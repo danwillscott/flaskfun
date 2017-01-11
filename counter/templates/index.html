@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Dojo Survey</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+		<script type="text/javascript" href="{{url_for('static', filename='script.js')}}"></script>
+	</head>
+	<body>
+		<div class="holder">
+			<h2>Counter {{count}}</h2>
+		<form action='' method='Post'>
+			<input type="hidden" name="postdata" value="reset">
+			<input type="submit" value="Reset">
+		</form>
+		<form action='' method='Post'>
+			<input type="hidden" name="postdata" value="plus2">
+			<input type="submit" value="+ 2">
+		</form>
+		</div>
+	</body>
+
+</html>

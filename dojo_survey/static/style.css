@@ -1,0 +1,14 @@
+body{
+	background-color: gray;
+	color: black;
+}
+
+.holder{
+	border: 1px solid black;
+	width: 20%;
+	padding: 3%;
+}
+textarea{
+	width: 250px;
+	height: 80px;
+}

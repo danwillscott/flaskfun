@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+		<script type="text/javascript" href="{{url_for('static', filename='script.js')}}"></script>
+	</head>
+	<body>
+
+    	<p>I am going to insert my name here: {{name}}</p>
+    	<p>This will is the result of {{times}}</p>
+    		{% for x in range (0, times) %}
+    	<p>{{ phrase }}</p>
+    		{% endfor %}
+
+    		{% if phrase == 'hello' %}
+    	<p>The phrase says hello</p>
+    		{% endif %}
+    	<a href="/success">CLICK ME!!</a>
+    	<img src="{{url_for('static', filename='cool.jpg') }}" width="300px">
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Dojo Survey Result</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+		<script type="text/javascript" href="{{url_for('static', filename='script.js')}}"></script>
+	</head>
+	<body>
+		<div class="holder">
+			<h2>Submitted Infomation</h2>
+			Name: {{ name }} <br>
+			Dojo Location: {{ loc }}<br>
+			Fav Lang: {{ lang }}<br>
+			Comment:<br>
+			{{ comment }}
+
+		</div>
+	</body>
+
+</html>
