@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Dojo Survey</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+		<script type="text/javascript" href="{{url_for('static', filename='script.js')}}"></script>
+	</head>
+	<body>
+		<div class="holder">
+		<form action='' method='Post'>
+			Full name:<br>
+			<input type="text" name="fullname"><br><br>
+			Dojo Location:
+			<br>
+			<select name="loc">
+			  <option value="SanJose">San Jose</option>
+			  <option value="SomePlace">Some Place</option>
+			  <option value="American">American!!!!</option>
+			</select><br><br>
+			Favorite Language:
+			<br>
+			<select name="lang">
+			  <option value="Python">Python</option>
+			  <option value="Javascript">Javascript</option>
+			  <option value="Swift">Swift</option>
+			</select>
+			<br><br>
+			Comments:
+			<br>
+			<textarea name="comment">THIS IS THE GREATEST COMMENT. I MAKE THE BEST COMMENTS</textarea><br><br>
+			<input type="submit" name="submit" value="SUBMIT">
+		</form>
+		</div>
+	</body>
+
+</html>

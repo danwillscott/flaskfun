@@ -20,9 +20,6 @@ def thisSessionCounter(num):
 	if num == 2:
 		session['counter'] += 1
 		return session['counter']
-	
-
-
 
 
 @app.route('/')
